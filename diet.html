@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <title>House Taste</title>
+    <link rel="stylesheet" href="resetstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plan-your-meal.css">
+    <meta charset="UTf-8">
+</head>
+
+<body>
+    <!--HEADER SECTION-->
+    <header>
+        <div class="header-box">
+            <a href="index.html">
+                <img class="logo-img" src="Pics/ht_logo.png">
+            </a>
+            <div class="header-nav">
+                <nav class="nav-left">
+                    <a href="index.html">Home</a>
+                    <a href="body-profile.html">Plan your Meal!</a>
+                    <a href="about-us.html">About us</a>
+                </nav>
+                <nav class="nav-right">
+                    <a class="login" href="login.html" data-name="auth">LOGIN</a>
+                    <a class="sign-up" href="sign-up.html" data-name="auth">SIGN UP</a>
+                    <a class="sign-up" href="sign-up.html" data-name="auth">LOG OUT</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <!--BANNER SECTION-->
+    <div class="banner-box">
+        <div class="banner-text">
+            <h3>Whatever you want but healtier!</h3>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a recipe..." name="search">
+            <i class="fa fa-search"></i>
+        </div>
+
+    </div>
+
+    <!--MAIN SECTION-->
+    <section class="diet">
+        <div class="text">
+            <h3>PLAN YOUR MEAL</h3>
+            <p>Help us finding your desired type of food!</p>
+        </div>
+        <div class="second-step">
+            <img src="Pics/Step2.jpg">
+        </div>
+        <div class="diet-choices">
+            <div class="row">
+                <div class="column">
+                    <h3>What kind of meats do you eat?</h3>
+                    <div class="check-box">
+                        <ul>
+                            <li><input type="radio">Beef</li>
+                            <li><input type="radio">Chicken</li>
+                            <li><input type="radio">Pork</li>
+                            <li><input type="radio">Seafood</li>
+                            <li><input type="radio">More...</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>Do you have any allergies?</h3>
+                    <div class="check-box">
+                        <ul>
+                            <li><input type="radio">Seafood</li>
+                            <li><input type="radio">Dairy</li>
+                            <li><input type="radio">Gluten</li>
+                            <li><input type="radio">Peanuts</li>
+                            <li><input type="radio">No, I don't have any allergy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h3>Which type of fodd you can't live w/o?</h3>
+                    <div class="check-box">
+                        <ul>
+                            <li><input type="radio">Meats</li>
+                            <li><input type="radio">Carbs(rice,pasta,dairy)</li>
+                            <li><input type="radio">Fruits</li>
+                            <li><input type="radio">Sweets</li>
+                            <li><input type="radio">I can cut anything!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>Any specific type of diet?</h3>
+                    <div class="check-box">
+                        <ul>
+                            <li><input type="radio">Vegetarian</li>
+                            <li><input type="radio">Vegan</li>
+                            <li><input type="radio">Pescatarian</li>
+                            <li><input type="radio">Nothing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="choice">
+                <a href="goal.html">
+                    <button class="next-button">NEXT</button>
+                </a>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER SECTION-->
+    <footer>
+        <h2># EatHealtier</h2>
+        <hr>
+        <div class="footer-box">
+
+            <div class="footer-left">
+                <a href="https://www.instagram.com/" target="_blank"><img src="Pics/instagram.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="Pics/Facebook-Logo-PNG.png"></a>
+                <a href="https://snapchat.com/" target="_blank"><img src="Pics/snapchat.png"></a>
+                <a href="https://linkedin.com/" target="_blank"><img src="Pics/linkedin.png"></a>
+                <a href="https://www.pinterest.com.au/" target="_blank"><img src="Pics/pinterest png.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="Pics/twitter png.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="Pics/youtube.png"></a>
+            </div>
+            <div class="footer-right">
+                <a href="" target="_blank">Term of service</a>
+                <a href="" target="_blank">Privacy Policy</a>
+                <p>@House Taste 2020</p>
+                <a href="index.html" target="_blank">
+                    <img class="footer-img" src="Pics/ht_logo.png">
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

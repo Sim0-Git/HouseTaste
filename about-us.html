@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>House Taste</title>
+    <link rel="stylesheet" href="resetstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTf-8">
+</head>
+
+<body>
+    <!--HEADER SECTION-->
+    <header>
+        <div class="header-box">
+            <a href="index.html">
+                <img class="logo-img" src="Pics/ht_logo.png">
+            </a>
+            <div class="header-nav">
+                <nav class="nav-left">
+                    <a href="index.html">Home</a>
+                    <a href="body-profile.html">Plan your Meal!</a>
+                    <a href="about-us.html">About us</a>
+                </nav>
+                <nav class="nav-right">
+                    <a class="login" href="login.html" target="_blank">LOGIN</a>
+                    <a class="sign-up" href="sign-up.html">SIGN UP</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <!--BANNER SECTION-->
+    <div class="about-banner-box">
+        <div class="banner-text">
+            <h3>About Us </h3>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a recipe..." name="search">
+            <i class="fa fa-search"></i>
+        </div>
+
+    </div>
+
+    <!--MAIN SECTION-->
+    <div class="mainabout">
+        <div class="foundation">
+            <h1>Foundation</h1>
+            <h2>House taste is a company created in 2020 with the purpose of providing a healthier life for each one of
+                our customers and also to make healthy food more attractive to consumers so they can be motivated to
+                enjoy a meal without many calories and also providing them lots of nutrients.</h2>
+            <div class="foundation-images">
+                <img class="foundation-img" src="fondation.jpg">
+                <img class="foundation-img2" src="housetasteteam.jpg">
+            </div>
+        </div>
+        <div class="ourmeals">
+            <h1>Our Meals</h1>
+            <h2>
+                We try to provide the best of the best to our customers.Every single meal has been approved by a
+                nutritionist and requires all the basic nutrients for your everyday life.
+            </h2>
+            <div class="ourmealsimages">
+                <img class="ourmeals-img" src="ourmeals.jpg">
+                <img class="ourmeals-img2" src="ourmeals2.png">
+            </div>
+        </div>
+        <div class="inovation">
+            <h1>Innovation</h1>
+            <h2>
+                The majority of our recipes are developed by our staff members , trying always to create new dishes to
+                satisfy you.
+            </h2>
+            <div class="inovation-images">
+                <img class="inovation-img" src="inovation.jpg">
+                <img class="inovation-img2" src="inovation2.png">
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER SECTION-->
+    <footer>
+        <h2># EatHealtier</h2>
+        <hr>
+        <div class="footer-box">
+
+            <div class="footer-left">
+                <a href="https://www.instagram.com/" target="_blank"><img src="Pics/instagram.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="Pics/Facebook-Logo-PNG.png"></a>
+                <a href="https://snapchat.com/" target="_blank"><img src="Pics/snapchat.png"></a>
+                <a href="https://linkedin.com/" target="_blank"><img src="Pics/linkedin.png"></a>
+                <a href="https://www.pinterest.com.au/" target="_blank"><img src="Pics/pinterest png.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="Pics/twitter png.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="Pics/youtube.png"></a>
+            </div>
+            <div class="footer-right">
+                <a href="" target="_blank">Term of service</a>
+                <a href="" target="_blank">Privacy Policy</a>
+                <p>@House Taste 2020</p>
+                <a href="index.html" target="_blank">
+                    <img class="footer-img" src="Pics/ht_logo.png">
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
